@@ -1,4 +1,4 @@
-name: Deploy Vite to GitHub Pages
+name: Deploy Vite App
 
 on:
   push:
@@ -10,7 +10,7 @@ permissions:
   id-token: write
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -22,7 +22,7 @@ jobs:
         with:
           node-version: 18
 
-      - name: Install deps
+      - name: Install
         run: npm install
 
       - name: Build
@@ -31,10 +31,10 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
-      - name: Upload artifact
+      - name: Upload
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist  # 🔥 QUAN TRỌNG
+          path: dist
 
       - name: Deploy
         uses: actions/deploy-pages@v4
