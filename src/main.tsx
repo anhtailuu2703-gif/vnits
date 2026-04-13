@@ -6,7 +6,7 @@ import ScrollToTop from './components/ScrollToTop/ScrollToTop.tsx';
 
 ReactDom.createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/vnits/">
       <ScrollToTop />
       <App />
     </BrowserRouter>
