@@ -1,0 +1,271 @@
+.about-section {
+  padding: 100px 20px;
+  background: #777676;
+  color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* HEADER */
+.about-header {
+  text-align: center;
+  background: url("../../assets/banner-defaul.jpg") center/cover no-repeat rgba(12, 11, 11, 0.5);
+  margin-bottom: 60px;
+}
+
+.about-header h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.about-header p {
+  opacity: 1;
+  color: #fff;
+}
+
+/* MAIN */
+.about-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.about-text p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  opacity: 0.85;
+}
+
+/* HIGHLIGHT */
+.about-highlight {
+  margin: 20px 0;
+  color: #facc15;
+  line-height: 1.8;
+}
+
+/* BUTTON */
+.btn-primary {
+  padding: 12px 24px;
+  background: #facc15;
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* IMAGE */
+.about-image img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* FEATURES */
+.about-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.feature {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+}
+
+.icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .about-main {
+    grid-template-columns: 1fr;
+  }
+
+  .about-features {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================
+   DESKTOP (>= 1025px)
+========================= */
+
+
+/* HEADER */
+.about-header {
+  text-align: center;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url("../../assets/banner-defaul.jpg") center/cover no-repeat;
+  padding: 80px 20px;
+  border-radius: 12px;
+  margin-bottom: 60px;
+}
+
+.about-header h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.about-header p {
+  color: #fff;
+}
+
+/* MAIN */
+.about-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.about-text p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  opacity: 0.85;
+}
+
+/* HIGHLIGHT */
+.about-highlight {
+  margin: 20px 0;
+  color: #facc15;
+  line-height: 1.8;
+}
+
+/* BUTTON */
+.btn-primary {
+  padding: 12px 24px;
+  background: #facc15;
+  border: none;
+  color: #000;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* IMAGE */
+.about-image img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* FEATURES */
+.about-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.feature {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+}
+
+.icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+
+/* =========================
+   TABLET (<= 1024px)
+========================= */
+@media (max-width: 1024px) {
+  .about-section {
+    padding: 80px 20px;
+  }
+
+  .about-header {
+    padding: 60px 20px;
+  }
+
+  .about-header h2 {
+    font-size: 30px;
+  }
+
+  .about-main {
+    gap: 30px;
+  }
+
+  .about-features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* =========================
+   MOBILE (<= 768px)
+========================= */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 60px 15px;
+  }
+
+  .about-header {
+    padding: 50px 15px;
+  }
+
+  .about-header h2 {
+    font-size: 24px;
+  }
+
+  /* 🔥 chuyển 1 cột */
+  .about-main {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .about-image {
+    order: -1; /* đưa ảnh lên trên */
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  .about-features {
+    grid-template-columns: 1fr;
+  }
+
+  .feature {
+    padding: 20px;
+  }
+}
+
+
+/* =========================
+   SMALL MOBILE (<= 480px)
+========================= */
+@media (max-width: 480px) {
+  .about-header h2 {
+    font-size: 20px;
+  }
+
+  .about-text p {
+    font-size: 14px;
+  }
+
+  .btn-primary {
+    width: 100%;
+  }
+}

@@ -1,0 +1,191 @@
+/* =========================
+   BASE (DESKTOP >= 1025px)
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+/* HERO */
+
+.integration-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 120px;
+  margin-top: 80px; /* nếu có header */
+}
+
+.integration-hero-left span {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.integration-hero-left {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 60px 30px; /* 🔥 FIX DÍNH TRÊN */
+}
+
+.integration-hero-left.green {
+  background: #7dbd2f;
+}
+
+.integration-hero-left span {
+  font-size: 12px;
+  letter-spacing: 3px;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.integration-hero-left h1 {
+  margin: 10px 0;
+  font-size: 32px;
+}
+
+.integration-hero-left p {
+  font-size: 15px;
+}
+
+.integration-hero-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* INTRO */
+.integration-intro {
+  text-align: center;
+  padding: 70px 140px;
+}
+
+/* CARD */
+.integration-card-section {
+  padding: 60px 140px 100px;
+}
+
+.integration-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* GRID */
+.integration-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.integration-item img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.integration-item:hover img {
+  transform: scale(1.05);
+}
+
+/* RIGHT */
+.integration-card-right {
+  padding: 40px;
+  border-left: 4px solid #7dbd2f;
+}
+
+.integration-card-right ul li {
+  margin-bottom: 12px;
+  font-size: 15px;
+  list-style: none;
+}
+
+.integration-card-right ul li::before {
+  content: "✔";
+  color: #7dbd2f;
+  margin-right: 8px;
+}
+
+/* =========================
+   TABLET (768px → 1024px)
+========================= */
+@media (max-width: 1024px) {
+
+  .integration-hero {
+    min-height: 200px;
+  }
+
+  .integration-hero-left {
+    padding: 40px;
+  }
+
+  .integration-hero-left h1 {
+    font-size: 26px;
+  }
+
+  .integration-intro {
+    padding: 50px 60px;
+  }
+
+  .integration-card-section {
+    padding: 50px 60px 80px;
+  }
+
+  .integration-card {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* =========================
+   MOBILE (< 768px)
+========================= */
+@media (max-width: 768px) {
+
+  /* 🔥 tất cả về 1 cột */
+  .integration-hero,
+  .integration-card {
+    grid-template-columns: 1fr;
+  }
+
+  .integration-hero {
+    min-height: auto;
+  }
+
+  .integration-hero-left {
+    padding: 25px 20px;
+    text-align: center;
+  }
+
+  .integration-hero-left h1 {
+    font-size: 22px;
+  }
+
+  .integration-intro {
+    padding: 30px 20px;
+  }
+
+  .integration-card-section {
+    padding: 30px 20px 60px;
+  }
+
+  .integration-card-right {
+    border-left: none;
+    border-top: 4px solid #7dbd2f;
+  }
+}
+
+/* =========================
+   SMALL MOBILE (< 480px)
+========================= */
+@media (max-width: 480px) {
+
+  .integration-hero-left h1 {
+    font-size: 20px;
+  }
+
+  .integration-intro p {
+    font-size: 14px;
+  }
+}

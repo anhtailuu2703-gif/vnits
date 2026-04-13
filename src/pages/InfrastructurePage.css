@@ -1,0 +1,282 @@
+/* =========================
+   DESKTOP (>= 1025px)
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.inf-page {
+    background: #fff;
+}
+
+/* HERO */
+.inf-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 240px;
+  margin-top: 80px; /* 🔥 QUAN TRỌNG */
+}
+
+.inf-hero-left {
+  background: #f59e0b;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 60px 30px;
+}
+
+.inf-hero-left span {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 3px;
+  margin-bottom: 8px;
+}
+
+.inf-hero-left h1 {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+.inf-hero-left p {
+    font-size: 14px;
+}
+
+.inf-hero-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* INTRO */
+.inf-intro {
+    text-align: center;
+    padding: 60px 120px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* ABOUT */
+.inf-about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 40px 120px;
+    gap: 40px;
+    align-items: center;
+}
+
+.inf-about-left img {
+    width: 100%;
+}
+
+.inf-about-right h3 {
+    margin-bottom: 20px;
+}
+
+.inf-about-right ul {
+    list-style: none;
+}
+
+.inf-about-right li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.inf-about-right li::before {
+    content: "✔";
+    color: orange;
+    position: absolute;
+    left: 0;
+}
+
+/* GRID */
+.inf-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 40px 120px;
+}
+
+.inf-card {
+    text-align: center;
+    cursor: pointer;
+}
+
+.inf-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.inf-card:hover img {
+    transform: scale(1.1);
+}
+
+.inf-card p {
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+/* SERVICE */
+.inf-service {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    padding: 60px 120px;
+    gap: 40px;
+    align-items: center;
+}
+
+.inf-service-left h2 {
+    margin-bottom: 20px;
+}
+
+.inf-service-left ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.inf-service-left li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.inf-service-left li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: orange;
+}
+
+.inf-service-right img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* =========================
+   TABLET (<= 1024px)
+========================= */
+@media (max-width: 1024px) {
+    .inf-hero {
+        height: 200px;
+        overflow: hidden;
+    }
+
+    .inf-hero-left {
+        padding: 20px 40px;
+    }
+
+    .inf-hero-left h1 {
+        font-size: 24px;
+    }
+
+    .inf-intro {
+        padding: 50px 60px;
+    }
+
+    .inf-about {
+        padding: 40px 60px;
+        gap: 30px;
+    }
+
+    /* 🔥 3 → 2 cột */
+    .inf-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 40px 60px;
+    }
+
+    .inf-service {
+        padding: 50px 60px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .inf-card img {
+        height: 160px;
+    }
+}
+
+
+/* =========================
+   MOBILE (<= 768px)
+========================= */
+@media (max-width: 768px) {
+
+    /* 🔥 tất cả về 1 cột */
+    .inf-hero,
+    .inf-about,
+    .inf-grid,
+    .inf-service {
+        grid-template-columns: 1fr;
+    }
+
+    .inf-hero {
+        height: auto;
+    }
+
+    .inf-hero-left {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .inf-hero {
+        overflow: hidden;
+    }
+
+    .inf-hero-left h1 {
+        font-size: 22px;
+    }
+
+    .inf-intro {
+        padding: 30px 20px;
+        font-size: 14px;
+    }
+
+    .inf-about {
+        padding: 30px 20px;
+    }
+
+    .inf-about-right {
+        text-align: center;
+    }
+
+    .inf-grid {
+        padding: 30px 20px;
+    }
+
+    .inf-card img {
+        height: 180px;
+    }
+
+    .inf-service {
+        padding: 30px 20px;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE (<= 480px)
+========================= */
+@media (max-width: 480px) {
+    .inf-hero {
+        overflow: hidden;
+    }
+
+    .inf-hero-left h1 {
+        font-size: 20px;
+    }
+
+    .inf-card img {
+        height: 150px;
+    }
+
+    .inf-intro {
+        font-size: 13px;
+    }
+}

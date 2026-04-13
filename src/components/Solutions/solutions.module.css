@@ -1,0 +1,127 @@
+/* =========================
+   DESKTOP (>= 1025px)
+========================= */
+
+.solutions {
+  padding: 80px 40px;
+  background: #ffffff;
+}
+
+.title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: #1b5e20;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+.grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.card {
+  background: #fff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+
+.image img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+.card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1b5e20;
+  margin: 20px;
+}
+
+.card p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+  margin: 0 20px 25px;
+}
+
+/* =========================
+   TABLET (<= 1024px)
+========================= */
+@media (max-width: 1024px) {
+  .solutions {
+    padding: 70px 20px;
+  }
+
+  .title {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+
+  /* 🔥 2 cột thay vì 1 */
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .image img {
+    height: 200px;
+  }
+}
+
+
+/* =========================
+   MOBILE (<= 768px)
+========================= */
+@media (max-width: 768px) {
+  .solutions {
+    padding: 60px 15px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  /* 🔥 1 cột */
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .image img {
+    height: 220px;
+  }
+
+  .card h3 {
+    font-size: 16px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+}
+
+
+/* =========================
+   SMALL MOBILE (<= 480px)
+========================= */
+@media (max-width: 480px) {
+  .title {
+    font-size: 20px;
+  }
+
+  .image img {
+    height: 180px;
+  }
+}
+

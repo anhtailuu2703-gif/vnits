@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui;
+  background: #000;
+  overflow-x: hidden;
+}
+
+/* Section */
+.section {
+  position: relative;
+  height: 120vh;
+  overflow: hidden;
+}
+
+/* Background layer */
+.bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  will-change: transform;
+}
+
+/* Content */
+.content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  text-align: center;
+
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+}
+
+.content h1 {
+  font-size: 64px;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 20px;
+  opacity: 0.8;
+}

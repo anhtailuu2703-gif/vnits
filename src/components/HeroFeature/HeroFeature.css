@@ -1,0 +1,176 @@
+.hero-feature {
+  position: relative;
+  padding: 100px 0;
+  background: url("../../assets/SKY36-From-The-Night-Sky_10000.png") center/cover no-repeat;
+}
+
+/* overlay tối */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+}
+
+/* container */
+.container {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  color: white;
+}
+
+/* TITLE CENTER */
+.title {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 60px;
+}
+
+/* CONTENT 2 CỘT */
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* IMAGE */
+.left img {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* RIGHT LIST */
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* ITEM */
+.item {
+  display: flex;
+  gap: 15px;
+}
+
+/* DOT */
+.item span {
+  width: 10px;
+  height: 10px;
+  background: #facc15;
+  border-radius: 50%;
+  margin-top: 6px;
+  box-shadow: 0 0 10px #facc15;
+}
+
+/* TEXT */
+.item h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.item p {
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+/* =========================
+   DESKTOP (>= 1025px)
+========================= */
+/* giữ nguyên code của bạn */
+
+
+/* =========================
+   TABLET (<= 1024px)
+========================= */
+@media (max-width: 1024px) {
+  .hero-feature {
+    padding: 80px 0;
+  }
+
+  .title {
+    font-size: 34px;
+    margin-bottom: 40px;
+  }
+
+  .content {
+    gap: 40px;
+  }
+
+  .left img {
+    max-width: 420px;
+  }
+
+  .item h3 {
+    font-size: 16px;
+  }
+
+  .item p {
+    font-size: 14px;
+  }
+}
+
+
+/* =========================
+   MOBILE (<= 768px)
+========================= */
+@media (max-width: 768px) {
+  .hero-feature {
+    padding: 60px 0;
+  }
+
+  .title {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+
+  /* 🔥 chuyển 1 cột */
+  .content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .left {
+    display: flex;
+    justify-content: center;
+  }
+
+  .left img {
+    max-width: 90%;
+  }
+
+  .right {
+    align-items: center;
+  }
+
+  .item {
+    max-width: 400px;
+    text-align: left;
+  }
+}
+
+
+/* =========================
+   SMALL MOBILE (<= 480px)
+========================= */
+@media (max-width: 480px) {
+  .title {
+    font-size: 22px;
+  }
+
+  .item h3 {
+    font-size: 15px;
+  }
+
+  .item p {
+    font-size: 13px;
+  }
+
+  .item span {
+    width: 8px;
+    height: 8px;
+  }
+}

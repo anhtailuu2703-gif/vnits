@@ -1,0 +1,261 @@
+.feature-section {
+  position: relative;
+  padding: 100px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+/* Arrow */
+.arrow {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 30px;
+  color: #f59e0b;
+}
+
+/* Text */
+.feature-subtitle {
+  letter-spacing: 3px;
+  color: #777;
+}
+
+.feature-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #1f4d3b;
+  margin: 20px 0;
+}
+
+.feature-desc {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #555;
+  line-height: 1.6;
+}
+
+.feature-heading {
+  margin-top: 40px;
+  color: #1f4d3b;
+}
+
+/* Content */
+.feature-content {
+  position: relative;
+  margin-top: 60px;
+  height: 400px;
+}
+
+/* Building */
+.building {
+  height: 100%;
+}
+
+/* Nodes */
+.node {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border: 2px solid #ef4444;
+  border-radius: 50%;
+  padding: 10px 15px;
+  font-size: 12px;
+  color: #444;
+  background: #fff;
+  white-space: nowrap;
+}
+
+/* =========================
+   DESKTOP (>= 1025px)
+========================= */
+/* giữ nguyên code của bạn */
+
+
+/* =========================
+   TABLET (<= 1024px)
+========================= */
+@media (max-width: 1024px) {
+  .feature-section {
+    padding: 80px 20px;
+  }
+
+  .feature-title {
+    font-size: 28px;
+  }
+
+  .feature-desc {
+    max-width: 600px;
+  }
+
+  .feature-content {
+    height: 320px;
+  }
+
+  .building {
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .node {
+    font-size: 11px;
+    padding: 8px 12px;
+  }
+}
+
+
+/* =========================
+   MOBILE (<= 768px)
+========================= */
+@media (max-width: 768px) {
+  .feature-section {
+    padding: 60px 15px;
+  }
+
+  .feature-title {
+    font-size: 24px;
+  }
+
+  .feature-desc {
+    font-size: 14px;
+  }
+
+  /* QUAN TRỌNG: bỏ absolute layout */
+  .feature-content {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .building {
+    width: 100%;
+    height: auto;
+  }
+
+  /* node chuyển thành list */
+  .node {
+    position: static;
+    transform: none;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+  }
+}
+
+
+/* =========================
+   SMALL MOBILE (<= 480px)
+========================= */
+@media (max-width: 480px) {
+  .feature-title {
+    font-size: 20px;
+  }
+
+  .feature-subtitle {
+    font-size: 12px;
+  }
+
+  .node {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .arrow {
+    font-size: 24px;
+  }
+}
+
+/* =========================
+   DESKTOP (>= 1025px)
+========================= */
+.feature-section {
+  padding: 100px 20px;
+}
+
+.feature-content {
+  position: relative;
+  height: 450px;
+}
+
+.building {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 280px;
+}
+
+.node {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+
+/* =========================
+   TABLET (<= 1024px)
+========================= */
+@media (max-width: 1024px) {
+  .feature-section {
+    padding: 80px 20px;
+  }
+
+  .feature-title {
+    font-size: 28px;
+  }
+
+  .feature-content {
+    height: 350px;
+  }
+
+  .building {
+    height: 220px;
+  }
+
+  .node {
+    font-size: 12px;
+  }
+}
+
+
+/* =========================
+   MOBILE (<= 768px)
+========================= */
+@media (max-width: 768px) {
+  .feature-section {
+    padding: 60px 15px;
+  }
+
+  .feature-title {
+    font-size: 22px;
+  }
+
+  .feature-desc {
+    font-size: 14px;
+  }
+
+  /* chuyển layout */
+  .feature-content {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .building {
+    position: static;
+    transform: none;
+    width: 80%;
+    height: auto;
+  }
+
+  .node {
+    position: static;
+    transform: none;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+  }
+}

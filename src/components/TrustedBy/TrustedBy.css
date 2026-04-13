@@ -1,0 +1,49 @@
+/* .logo-slider {
+  overflow: hidden;
+  width: 100%;
+  background: #eee;
+  padding: 20px 0;
+}
+
+.logo-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 25s linear infinite;
+}
+
+.logo-track img {
+  height: 60px;
+  margin: 0 40px;
+  object-fit: contain;
+  flex-shrink: 0;
+} */
+
+/* 🔥 KEY */
+/* @keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+} */
+
+.logo-slider {
+  overflow: hidden;
+  width: max-content;
+  background: #eee;
+  padding: 20px 0;
+  cursor: grab;
+}
+
+.logo-track {
+  display: flex;
+  gap: 60px;
+}
+
+.logo-track img {
+  height: clamp(40px, 5vw, 70px);
+  object-fit: contain;
+  user-select: none;
+  pointer-events: none;
+}

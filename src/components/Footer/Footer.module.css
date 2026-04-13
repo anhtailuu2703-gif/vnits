@@ -1,0 +1,162 @@
+.footer {
+  background-color: #0f3460;
+  color: #fff;
+  padding: 60px 50px 30px 50px;
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+.colInfo,
+.colForm {
+  flex: 1;
+  min-width: 320px;
+}
+.colInfo h3,
+.colForm h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.colInfo p {
+  margin-bottom: 12px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+.icon {
+  margin-right: 10px;
+  color: #00ffcc;
+}
+.map iframe {
+  border-radius: 8px;
+  width: 100%;
+  height: 220px;
+  margin-top: 15px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.form input,
+.form textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+}
+.form button {
+  padding: 14px;
+  background-color: #162447;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.form button:hover {
+  background-color: #0f3460;
+}
+.success {
+  margin-top: 10px;
+  color: #00ff99;
+  font-weight: 500;
+}
+.bottom {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* =========================
+   TABLET (<= 1024px)
+========================= */
+@media (max-width: 1024px) {
+  .footer {
+    padding: 50px 30px 25px;
+  }
+
+  .container {
+    gap: 30px;
+  }
+
+  .colInfo h3,
+  .colForm h3 {
+    font-size: 20px;
+  }
+
+  .colInfo p {
+    font-size: 15px;
+  }
+
+  .map iframe {
+    height: 200px;
+  }
+}
+
+
+/* =========================
+   MOBILE (<= 768px)
+========================= */
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 20px 20px;
+  }
+
+  /* 🔥 chuyển dọc */
+  .container {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .colInfo,
+  .colForm {
+    min-width: 100%;
+  }
+
+  .colInfo {
+    text-align: center;
+  }
+
+  .colInfo p {
+    justify-content: center;
+  }
+
+  .map iframe {
+    height: 180px;
+  }
+
+  .form input,
+  .form textarea {
+    font-size: 14px;
+  }
+
+  .form button {
+    padding: 12px;
+  }
+}
+
+
+/* =========================
+   SMALL MOBILE (<= 480px)
+========================= */
+@media (max-width: 480px) {
+  .colInfo h3,
+  .colForm h3 {
+    font-size: 18px;
+  }
+
+  .bottom {
+    font-size: 12px;
+  }
+
+  .map iframe {
+    height: 160px;
+  }
+}
