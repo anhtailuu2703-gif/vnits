@@ -6,7 +6,6 @@ import MainLayout from "./mainlayout/Mainlayout";
 import InfrastructurePage from './pages/InfrastructurePage';
 import SecurityPage from './pages/SecurityPage';
 import IntegrationPage from './pages/IntegrationPage';
-import logoITS from "../public/vnits_logo.png";
 
 
 export default function App() {
