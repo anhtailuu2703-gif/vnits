@@ -1,5 +1,4 @@
 import "./InfrastructurePage.css";
-import { motion } from "framer-motion";
 import ImgBanner from "../assets/ha-tang-mang.jpg";
 import ImgGp from "../assets/gp_anninh.png";
 import imgbanle from "../assets/ban-le.jpg";

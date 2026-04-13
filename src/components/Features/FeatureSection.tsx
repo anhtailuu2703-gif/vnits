@@ -1,17 +1,20 @@
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import "./Features.css";
 import ImgFeat from "../../assets/Asset-30-e1590749294538.png";
 
-const arrowVariants = {
-  animate: {
-    y: [0, 20, 0],
-    opacity: [1, 0.5, 1],
-    transition: {
-      duration: 1.5,
-      repeat: Infinity,
-      ease: "easeInOut",
-    },
+const fadeUp: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 60
   },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: "easeOut"
+    }
+  }
 };
 
 export default function FeatureSection() {
@@ -20,8 +23,9 @@ export default function FeatureSection() {
       {/* Arrow */}
       <motion.div
         className="arrow"
-        variants={arrowVariants}
-        animate="animate"
+        variants={fadeUp}
+        initial="hidden"
+        animate="visible"
       >
         ↓
       </motion.div>

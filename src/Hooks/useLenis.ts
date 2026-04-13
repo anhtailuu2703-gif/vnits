@@ -4,7 +4,8 @@ import Lenis from "@studio-freight/lenis";
 export default function useLenis() {
   useEffect(() => {
     const lenis = new Lenis({
-      smooth: true,
+      duration: 1.2,
+      smoothWheel: true,
     });
 
     function raf(time: number) {
